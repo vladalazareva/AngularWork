@@ -6,12 +6,16 @@
   height: 34px;
 }
 
-.main input {
+.main_basic{
+  font-size: 20px;
+}
+
+.main_input {
   width: 0;
   height: 0;
 }
 
-.slider {
+.main_slider {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,9 +23,10 @@
   bottom: 0;
   background-color: lightgrey;
   transition: .4s;
+  border-radius: 34px;
 }
 
-.slider:before {
+.main_slider:before {
   position: absolute;
   content: "";
   height: 26px;
@@ -30,25 +35,15 @@
   bottom: 4px;
   background-color: white;
   transition: .4s;
+  border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked + .main_slider {
   background-color: cornflowerblue;
 }
 
-input:checked + .slider:before {
-  transform: translateX(95%);
+input:checked + .main_slider:before {
+  transform: translateX(100%);
 }
 
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-.slider.round:after {
-  border-radius: 50%;
-}
 
