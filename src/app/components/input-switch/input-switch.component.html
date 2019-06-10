@@ -1,5 +1,5 @@
 <label class="main">
-  <input class="main_input" type="checkbox"  [(ngModel)]="checked" >
   <p class="main_basic">Basic {{checked}}</p>
+  <input class="main_input" type="checkbox" [(ngModel)]="checked" (click)="onClick($event)">
   <span class="main_slider" ></span>
 </label>
