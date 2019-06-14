@@ -1,5 +1,4 @@
-<label class="main">
-  <p class="main_basic">Basic {{checked}}</p>
-  <input class="main_input" type="checkbox" [(ngModel)]="checked" (click)="onClick($event)">
-  <span class="main_slider" ></span>
+<label class="input-switch" [class.input-switch_readonly]="readonly">
+  <input class="input-switch__input" type="checkbox" [(ngModel)]="value" (click)="onClick($event)">
+  <span class="input-switch__slider"></span>
 </label>

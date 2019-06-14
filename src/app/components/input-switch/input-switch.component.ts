@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-input-switch',
@@ -6,23 +6,25 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
   styleUrls: ['./input-switch.component.scss']
 })
 
-export class InputSwitchComponent implements OnInit {
+export class InputSwitchComponent {
 
+  @Input() value: boolean;
   @Input() readonly: boolean;
+
   @Output() onChange: EventEmitter<any> = new EventEmitter();
 
-  checked = false;
-
-  constructor() {}
-
   onClick(event: Event) {
-    this.checked = (event.target as HTMLInputElement).checked;
+    // this.info = console.log(event).value;
+    if (this.readonly) {
+      event.preventDefault();
+      return;
+    }
+
+    this.value = (event.target as HTMLInputElement).checked;
     this.onChange.emit({
       originalEvent: event,
-      checked: this.checked
+      value: this.value
     });
   }
 
-  ngOnInit() {
-  }
 }

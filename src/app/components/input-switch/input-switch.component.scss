@@ -1,50 +1,51 @@
-.main {
+@import "../../../scss/colors";
+
+$slider-size: 26px;
+
+.input-switch {
   margin: 100px;
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
+  &_readonly{
+    opacity: 0.5;
+  }
+  &__input {
+    width: 0;
+    height: 0;
+  }
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: lightgrey;
+    transition: .4s;
+    border-radius: 34px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: $slider-size;
+      width: $slider-size;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+  }
 }
 
-.main_basic{
-  font-size: 20px;
-  padding-top: 15px;
-}
 
-.main_input {
-  width: 0;
-  height: 0;
-}
-
-.main_slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: lightgrey;
-  transition: .4s;
-  border-radius: 34px;
-}
-
-.main_slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: .4s;
-  border-radius: 50%;
-}
-
-input:checked + .main_slider {
+input:checked + .input-switch__slider {
   background-color: cornflowerblue;
-}
-
-input:checked + .main_slider:before {
-  transform: translateX(100%);
+  &:before {
+    transform: translateX(100%);
+  }
 }
 
 
