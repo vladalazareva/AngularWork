@@ -1,6 +1,4 @@
-import {Component, Input} from '@angular/core';
-import { Service } from '../../service/service.service';
-
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-logspace',
@@ -10,12 +8,9 @@ import { Service } from '../../service/service.service';
 
 export class LogspaceComponent {
 
-  @Input() info: string;
-  constructor(private service: Service) {
-    this.info = this.service.getEvent();
+  @Input() info: any;
+
+  lofFunction(){
+    console.log(this.info);
   }
-
- /* setInfo(): void {
-
-  }*/
 }

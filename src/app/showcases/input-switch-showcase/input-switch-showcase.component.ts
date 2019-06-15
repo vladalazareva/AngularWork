@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component, EventEmitter, Output, Input} from '@angular/core';
 
 @Component({
   selector: 'app-input-switch-showcase',
@@ -7,14 +7,14 @@ import {Component, EventEmitter, Output} from '@angular/core';
 })
 export class InputSwitchShowcaseComponent {
 
-  @Output() event: EventEmitter<any> = new EventEmitter();
+  @Output() info: EventEmitter<any> = new EventEmitter();
 
   onValueChange(changeEvent: any): void {
-     console.log(changeEvent);
-     this.event = changeEvent;
+    //console.log(changeEvent);
+     this.info = changeEvent;
    }
 
-  getEvent(): any {
+ /* getEvent(): any {
     return this.event;
-  }
+  }*/
 }
