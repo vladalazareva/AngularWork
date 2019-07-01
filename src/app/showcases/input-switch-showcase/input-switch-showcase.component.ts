@@ -7,11 +7,11 @@ import {Component, EventEmitter, Output, Input} from '@angular/core';
 })
 export class InputSwitchShowcaseComponent {
 
-  @Output() info: EventEmitter<any> = new EventEmitter();
+ info: string;
 
   onValueChange(changeEvent: any): void {
     //console.log(changeEvent);
-     this.info = changeEvent;
+     this.info += `${JSON.stringify(changeEvent)}&#13;&#10;`;
    }
 
  /* getEvent(): any {
