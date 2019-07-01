@@ -1,7 +1,10 @@
 .logspace{
-  margin: 100px;
+  margin: 50px;
   position: relative;
-  display: inline-block;
+  display: flex;
+  width: 500px;
+  padding-right: 100px;
+  height: 100px;
   &__p{
   font-size: 30%;
   }

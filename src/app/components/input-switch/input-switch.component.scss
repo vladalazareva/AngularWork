@@ -3,9 +3,9 @@
 $slider-size: 26px;
 
 .input-switch {
-  margin: 100px;
+  margin-left: 100px;
   position: relative;
-  display: inline-block;
+  display: flex;
   width: 60px;
   height: 34px;
   &_readonly{
