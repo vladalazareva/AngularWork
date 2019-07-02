@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { InputSwitchComponent } from './components/input-switch/input-switch.component';
 import { InputSwitchShowcaseComponent } from './showcases/input-switch-showcase/input-switch-showcase.component';
 import { LogspaceComponent } from './components/logspace/logspace.component';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputSwitchComponent,
     InputSwitchShowcaseComponent,
-    LogspaceComponent
+    LogspaceComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
