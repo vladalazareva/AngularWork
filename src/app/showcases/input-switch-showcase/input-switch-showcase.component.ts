@@ -10,11 +10,6 @@ export class InputSwitchShowcaseComponent {
  info: string;
 
   onValueChange(changeEvent: any): void {
-    //console.log(changeEvent);
      this.info += `${JSON.stringify(changeEvent)}&#13;&#10;`;
    }
-
- /* getEvent(): any {
-    return this.event;
-  }*/
 }

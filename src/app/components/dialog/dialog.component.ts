@@ -13,7 +13,6 @@ export class DialogComponent {
   @Input() title: string;
   @Output() visibleChange: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-
   close() {
     this.visible = false;
     this.visibleChange.emit(this.visible);
@@ -21,6 +20,7 @@ export class DialogComponent {
 
   showBig() {
     this.fullView = !this.fullView;
+    this.title = 'The biggest title';
   }
 
 }

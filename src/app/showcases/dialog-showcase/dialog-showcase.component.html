@@ -1,6 +1,5 @@
 <app-dialog [title]="'Simple dialog'" [(visible)]="visible">
-  <p>Hello
-    <s> world</s>
-  </p>
+  <p>Hello<b> world</b></p>
 </app-dialog>
-<button (click)="showDialog()">Show dialog</button>
+<button (click)="showDialog()" >Show dialog</button>
+<app-logspace [info]="visible"></app-logspace>
