@@ -11,7 +11,10 @@ export class DialogComponent {
   @Input() visible: boolean;
   @Input() fullView: boolean;
   @Input() title: string;
+  @Input() size: string;
   @Output() visibleChange: EventEmitter<boolean> = new EventEmitter<boolean>();
+
+  size = 'size';
 
   close() {
     this.visible = false;
@@ -19,8 +22,14 @@ export class DialogComponent {
   }
 
   showBig() {
+    if (this.fullView) {
+      this.title = 'The biggest title';
+      this.size = 'Big';
+    } else {
+      this.title = 'The smallest title';
+      this.size = 'Small';
+    }
     this.fullView = !this.fullView;
-    this.title = 'The biggest title';
   }
 
 }

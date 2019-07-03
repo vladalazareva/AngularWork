@@ -1,9 +1,9 @@
 <div class="dialog" *ngIf="visible">
   <div class="dialog__container" [ngClass]="{dialog__container_fullview: fullView}">
     <div class = "dialog__titlebar">
-      <span class = "dialog__title">{{title}}</span><br>
-      <div class = "dialog__showbig" (click)="showBig()">Big</div><br>
-      <div class="dialog__close" (click)="close()">Close dialog</div><br>
+      <span class = "dialog__title">{{title}}</span>
+      <button class = "dialog__showbig" (click)="showBig()">{{size}}</button>
+      <button class="dialog__close" (click)="close()">Close dialog</button>
     </div>
     <div class="dialog__content">
       <ng-content>
