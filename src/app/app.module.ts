@@ -7,6 +7,7 @@ import { InputSwitchComponent } from './components/input-switch/input-switch.com
 import { InputSwitchShowcaseComponent } from './showcases/input-switch-showcase/input-switch-showcase.component';
 import { LogspaceComponent } from './components/logspace/logspace.component';
 import { DialogComponent } from './components/dialog/dialog.component';
+import { DialogShowcaseComponent } from './showcases/dialog-showcase/dialog-showcase.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DialogComponent } from './components/dialog/dialog.component';
     InputSwitchComponent,
     InputSwitchShowcaseComponent,
     LogspaceComponent,
-    DialogComponent
+    DialogComponent,
+    DialogShowcaseComponent
   ],
   imports: [
     BrowserModule,

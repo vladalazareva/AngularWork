@@ -1,7 +1,14 @@
-<a href="#open">Show</a>
-<div class="main" id="open">
-  <div class="main__block">
-    <a href="#" class="main__block__close">Close</a>
+<div class="dialog" *ngIf="visible">
+  <div class="dialog__container" [ngClass]="{dialog__container_fullview: fullView}">
+    <div class = "dialog__titlebar">
+      <span>{{title}}</span><br>
+      <button (click)="showBig()">Big</button><br>
+      <button (click)="close()">Close dialog</button><br>
+    </div>
+    <div class="dialog__content">
+      <ng-content>
+
+      </ng-content>
+    </div>
   </div>
 </div>
-

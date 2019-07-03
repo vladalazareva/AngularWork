@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-dialog',
@@ -7,5 +7,20 @@ import { Component } from '@angular/core';
 })
 
 export class DialogComponent {
+
+  @Input() visible: boolean;
+  @Input() fullView: boolean;
+  @Input() title: string;
+  @Output() visibleChange: EventEmitter<boolean> = new EventEmitter<boolean>();
+
+
+  close() {
+    this.visible = false;
+    this.visibleChange.emit(this.visible);
+  }
+
+  showBig() {
+    this.fullView = !this.fullView;
+  }
 
 }
