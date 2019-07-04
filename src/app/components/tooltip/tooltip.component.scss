@@ -1,0 +1,18 @@
+.tooltip {
+  position: relative;
+
+  &__text {
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    width: 172px;
+  }
+}
+.tooltip:hover .tooltip__text {
+  opacity: 1;
+}

@@ -8,6 +8,8 @@ import { InputSwitchShowcaseComponent } from './showcases/input-switch-showcase/
 import { LogspaceComponent } from './components/logspace/logspace.component';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { DialogShowcaseComponent } from './showcases/dialog-showcase/dialog-showcase.component';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { TooltipShowcaseComponent } from './showcases/tooltip-showcase/tooltip-showcase.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { DialogShowcaseComponent } from './showcases/dialog-showcase/dialog-show
     InputSwitchShowcaseComponent,
     LogspaceComponent,
     DialogComponent,
-    DialogShowcaseComponent
+    DialogShowcaseComponent,
+    TooltipComponent,
+    TooltipShowcaseComponent
   ],
   imports: [
     BrowserModule,

@@ -11,10 +11,9 @@ export class DialogComponent {
   @Input() visible: boolean;
   @Input() fullView: boolean;
   @Input() title: string;
-  @Input() size: string;
+  @Input() size = 'size';
   @Output() visibleChange: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  size = 'size';
 
   close() {
     this.visible = false;
