@@ -1,5 +1,8 @@
 .tooltip {
   position: relative;
+  display: flex;
+  width: 100px;
+  margin-left: 50px;
 
   &__text {
     background-color: cornflowerblue;
@@ -8,11 +11,26 @@
     border-radius: 4px;
     opacity: 0;
     transition: 0.5s;
-    display: flex;
-    flex-direction: column;
-    width: 172px;
+
+    &_left {
+      flex-direction: row;
+      background: darkblue;
+    }
+    &_right {
+      flex-direction: row-reverse;
+      background: khaki;
+    }
+    &_top {
+      flex-direction: column;
+      background: crimson;
+    }
+    &_buttom {
+      flex-direction: column-reverse;
+      background: green;
+    }
   }
 }
+
 .tooltip:hover .tooltip__text {
   opacity: 1;
 }
