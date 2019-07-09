@@ -4,6 +4,19 @@
   width: 100px;
   margin-left: 50px;
 
+  &_left {
+    flex-direction: row;
+  }
+  &_right {
+    flex-direction: row-reverse;
+  }
+  &_top {
+    flex-direction: column;
+  }
+  &_buttom {
+    flex-direction: column-reverse;
+  }
+
   &__text {
     background-color: cornflowerblue;
     color: white;
@@ -11,23 +24,6 @@
     border-radius: 4px;
     opacity: 0;
     transition: 0.5s;
-
-    &_left {
-      flex-direction: row;
-      background: darkblue;
-    }
-    &_right {
-      flex-direction: row-reverse;
-      background: khaki;
-    }
-    &_top {
-      flex-direction: column;
-      background: crimson;
-    }
-    &_buttom {
-      flex-direction: column-reverse;
-      background: green;
-    }
   }
 }
 
