@@ -1,29 +1,39 @@
-import {Directive, ElementRef, HostListener} from '@angular/core';
-import {ContentOptions} from './content/options';
+import {Directive, ElementRef, HostListener, Input} from '@angular/core';
 
 @Directive({
   selector: '[appTooltip]'
 })
 export class TooltipDirective {
 
-  constructor(private ef: ElementRef) {}
+  @Input() tooltipText: string;
+  @Input() tooltipPosition: string;
 
-  const options: ContentOptions = {
-    x: 10,
-    y: 10,
-    height: 10,
-    width: 10
-  };
+  private element: HTMLElement;
+
+  constructor(private el: ElementRef) {}
 
   @HostListener('mouseleave') onMouseLeave() {
-    this.tooltipBuild(null);
+    document.body.removeChild(this.element);
   }
 
   @HostListener('mouseenter') onMouseEnter() {
-    this.tooltipBuild(this.options);
+    this.createTooltip();
+    document.body.appendChild(this.element);
   }
 
-  private tooltipBilp(options: ContentOptions){
-    this.el.nativeElement.
+  private createTooltip() {
+    let position = this.el.nativeElement.getBoundingClientRect();
+    const topPos = position.top + window.scrollY;
+    const leftPos = position.left + window.scrollX + position.width/2 ;
+
+    let div = document.createElement('div');
+    let modifier = this.tooltipPosition || 'left';
+    div.className = 'tooltip tooltip_' + modifier;
+    div.innerHTML = `<div class = "tooltip__arrow"></div> 
+                     <div class = "tooltip__text" >${this.tooltipText}</div>`;
+    div.style.left = `${leftPos}px`;
+    div.style.top = `${topPos}px`;
+    this.element = div;
+
   }
 }
