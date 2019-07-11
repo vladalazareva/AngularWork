@@ -4,7 +4,6 @@
 
 .tooltip{
   position: absolute;
-  transform: translateX(-50%);
   display: flex;
   align-items: center;
 
@@ -19,8 +18,7 @@
 
 .tooltip_right{
   flex-direction: row;
-  margin-top: 6px;
-  margin-left: 125px;
+  transform: translateY(-50%);
 }
 
 .tooltip_right > .tooltip__arrow{
@@ -32,8 +30,7 @@
 
 .tooltip_left{
   flex-direction: row-reverse;
-  margin-top: 6px;
-  margin-left: -115px;
+  transform: translateX(-100%);
 }
 
 .tooltip_left > .tooltip__arrow{
@@ -50,10 +47,9 @@
 
 .tooltip_top > .tooltip__arrow{
   border: 5px solid transparent;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 5px solid cornflowerblue;
-  display: inline-block;
 }
 
 .tooltip_bottom{
@@ -63,8 +59,7 @@
 
 .tooltip_bottom > .tooltip__arrow{
   border: 5px solid transparent;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-bottom: 5px solid cornflowerblue;
-  display: inline-block;
 }

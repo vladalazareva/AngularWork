@@ -26,8 +26,8 @@ export class TooltipDirective {
     let modifier = this.tooltipPosition || 'bottom';
 
     let position = this.el.nativeElement.getBoundingClientRect();
-    let topPos = position.top + window.scrollY - 10 ;
-    let leftPos = position.left + window.scrollX + position.width/2 ;
+    let topPos = position.top + window.scrollY;
+    let leftPos = position.left + window.scrollX;
 
 
     div.className = 'tooltip tooltip_' + modifier;
@@ -37,11 +37,14 @@ export class TooltipDirective {
 
     switch(this.tooltipPosition){
       case 'right':
+        topPos += position.height/2;
+        leftPos += position.width;
         div.style.left = `${leftPos}px`;
         div.style.top = `${topPos}px`;
         break;
 
       case 'left':
+        topPos += position.height/2;
         div.style.left = `${leftPos}px`;
         div.style.top = `${topPos}px`;
         break;
