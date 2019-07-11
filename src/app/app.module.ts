@@ -11,6 +11,7 @@ import { DialogShowcaseComponent } from './showcases/dialog-showcase/dialog-show
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { TooltipShowcaseComponent } from './showcases/tooltip-showcase/tooltip-showcase.component';
 import { TooltipDirective } from './directives/tooltip.directive';
+import { TooltipDirectiveShowcaseComponent } from './showcases/tooltip-directive-showcase/tooltip-directive-showcase.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TooltipDirective } from './directives/tooltip.directive';
     DialogShowcaseComponent,
     TooltipComponent,
     TooltipShowcaseComponent,
-    TooltipDirective
+    TooltipDirective,
+    TooltipDirectiveShowcaseComponent
   ],
   imports: [
     BrowserModule,

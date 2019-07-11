@@ -5,49 +5,66 @@
 .tooltip{
   position: absolute;
   transform: translateX(-50%);
-
-  &__arrowRight{
-    border: 5px solid transparent;
-    width: 0px;
-    height: 0px;
-    border-right: 5px solid green;
-    display: flex;
-    align-items: center;
-  }
-
-  &__arrowLeft{
-    border: 5px solid transparent;
-    width: 0px;
-    height: 0px;
-    border-left: 5px solid blue;
-    display: flex;
-    align-items: center;
-  }
-
-  &__arrowTop{
-    margin-left: 42%;
-    border: 5px solid transparent;
-    width: 0px;
-    height: 0px;
-    border-top: 5px solid red;
-    display: inline-block;
-  }
-
-  &__arrowBottom{
-    margin-left: 45%;
-    border: 5px solid transparent;
-    width: 0px;
-    height: 0px;
-    border-bottom: 5px solid black;
-    display: inline-block;
-  }
+  display: flex;
+  align-items: center;
 
   &__text{
-    background: black;
+    background: cornflowerblue;
     color: white;
     box-shadow: 0 0 6px 0 grey;
-    opacity: 0.5;
     padding: 5px;
-    border-radius: 3px;
+    border-radius: 3px
   }
+}
+
+.tooltip_right{
+  flex-direction: row;
+  margin-top: 6px;
+  margin-left: 125px;
+}
+
+.tooltip_right > .tooltip__arrow{
+  border: 5px solid transparent;
+  width: 0;
+  height: 0;
+  border-right: 5px solid cornflowerblue;
+}
+
+.tooltip_left{
+  flex-direction: row-reverse;
+  margin-top: 6px;
+  margin-left: -115px;
+}
+
+.tooltip_left > .tooltip__arrow{
+  border: 5px solid transparent;
+  width: 0;
+  height: 0;
+  border-left: 5px solid cornflowerblue;
+}
+
+.tooltip_top{
+  flex-direction: column-reverse;
+  margin-top: -25px;
+}
+
+.tooltip_top > .tooltip__arrow{
+  border: 5px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-top: 5px solid cornflowerblue;
+  display: inline-block;
+}
+
+.tooltip_bottom{
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.tooltip_bottom > .tooltip__arrow{
+  border: 5px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-bottom: 5px solid cornflowerblue;
+  display: inline-block;
 }

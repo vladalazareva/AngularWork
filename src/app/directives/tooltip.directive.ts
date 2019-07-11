@@ -32,41 +32,33 @@ export class TooltipDirective {
 
     div.className = 'tooltip tooltip_' + modifier;
 
-    switch(modifier){
-      case 'right':
-        leftPos = leftPos + 125;
-        div.style.left = `${leftPos}px`;
-        div.style.top = `${topPos}px`;
-        div.innerHTML = `<div class = "tooltip__arrowRight" ></div> 
+    div.innerHTML = `<div class = "tooltip__arrow" ></div> 
                      <div class = "tooltip__text" >${this.tooltipText}</div>`;
+
+    switch(this.tooltipPosition){
+      case 'right':
+        div.style.left = `${leftPos}px`;
+        div.style.top = `${topPos}px`;
         break;
+
       case 'left':
-        leftPos = leftPos - 120;
         div.style.left = `${leftPos}px`;
         div.style.top = `${topPos}px`;
-        div.innerHTML = ` <div class = "tooltip__text" >${this.tooltipText}</div>
-                          <div class = "tooltip__arrowLeft" ></div> 
-                    `;
         break;
+
       case 'top':
-        topPos = topPos - 30;
+
         div.style.top = `${topPos}px`;
         div.style.left = `${leftPos}px`;
-        div.innerHTML = ` <div class = "tooltip__text" >${this.tooltipText}</div>
-                          <div class = "tooltip__arrowTop"></div> 
-                    `;
         break;
+
       case 'bottom':
-        topPos = topPos + 30;
         div.style.top = `${topPos}px`;
         div.style.left = `${leftPos}px`;
         div.style.flex = "column";
-        div.innerHTML = `<div class = "tooltip__arrowBottom"></div> 
-                     <div class = "tooltip__text" >${this.tooltipText}</div>`;
         break;
     }
-    //div.style.left = `${leftPos}px`;
-    //div.style.top = `${topPos}px`;
+
     this.element = div;
 
   }
