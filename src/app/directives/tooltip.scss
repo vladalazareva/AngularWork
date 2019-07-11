@@ -6,13 +6,13 @@
   position: absolute;
   transform: translateX(-50%);
 
-
   &__arrowRight{
     border: 5px solid transparent;
     width: 0px;
     height: 0px;
     border-right: 5px solid green;
-    display: inline-block;
+    display: flex;
+    align-items: center;
   }
 
   &__arrowLeft{
@@ -20,8 +20,10 @@
     width: 0px;
     height: 0px;
     border-left: 5px solid blue;
-    display: inline-block;
+    display: flex;
+    align-items: center;
   }
+
   &__arrowTop{
     margin-left: 42%;
     border: 5px solid transparent;
