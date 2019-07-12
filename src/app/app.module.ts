@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InputSwitchComponent } from './components/input-switch/input-switch.component';
@@ -12,6 +13,13 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { TooltipShowcaseComponent } from './showcases/tooltip-showcase/tooltip-showcase.component';
 import { TooltipDirective } from './directives/tooltip.directive';
 import { TooltipDirectiveShowcaseComponent } from './showcases/tooltip-directive-showcase/tooltip-directive-showcase.component';
+
+const appRoutes: Routes = [
+  { path: 'InputSwitch', component: InputSwitchShowcaseComponent },
+  { path: 'Dialog',      component: DialogShowcaseComponent },
+  { path: 'Tooltip',      component: TooltipShowcaseComponent },
+  { path: 'TooltipDirective',      component: TooltipDirectiveShowcaseComponent },
+  ];
 
 @NgModule({
   declarations: [
