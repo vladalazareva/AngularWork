@@ -44,21 +44,22 @@ export class TooltipDirective {
         break;
 
       case 'left':
-        topPos += position.height/2;
+        topPos -= position.height/10;
+        leftPos += position.width/100;
         div.style.left = `${leftPos}px`;
         div.style.top = `${topPos}px`;
         break;
 
       case 'top':
-
+        topPos -= 2*position.height;
         div.style.top = `${topPos}px`;
         div.style.left = `${leftPos}px`;
         break;
 
       case 'bottom':
+        topPos += position.height;
         div.style.top = `${topPos}px`;
         div.style.left = `${leftPos}px`;
-        div.style.flex = "column";
         break;
     }
 

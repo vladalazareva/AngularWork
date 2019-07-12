@@ -1,4 +1,4 @@
-.tooltip1{
+.allTooltip__input{
   margin-left: 100px;
 }
 
@@ -16,15 +16,18 @@
   }
 }
 
+.tooltip__arrow{
+  border: 5px solid transparent;
+  width: 0;
+  height: 0;
+}
+
 .tooltip_right{
   flex-direction: row;
   transform: translateY(-50%);
 }
 
 .tooltip_right > .tooltip__arrow{
-  border: 5px solid transparent;
-  width: 0;
-  height: 0;
   border-right: 5px solid cornflowerblue;
 }
 
@@ -34,32 +37,23 @@
 }
 
 .tooltip_left > .tooltip__arrow{
-  border: 5px solid transparent;
-  width: 0;
-  height: 0;
   border-left: 5px solid cornflowerblue;
 }
 
 .tooltip_top{
   flex-direction: column-reverse;
-  margin-top: -25px;
+  transform: translateX(100%);
 }
 
 .tooltip_top > .tooltip__arrow{
-  border: 5px solid transparent;
-  width: 0;
-  height: 0;
   border-top: 5px solid cornflowerblue;
 }
 
 .tooltip_bottom{
   flex-direction: column;
-  margin-top: 30px;
+  transform: translateX(50%);
 }
 
 .tooltip_bottom > .tooltip__arrow{
-  border: 5px solid transparent;
-  width: 0;
-  height: 0;
   border-bottom: 5px solid cornflowerblue;
 }
