@@ -1,8 +1,25 @@
+p{
+  color: darkblue;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+body{
+  background: black;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  font-family: 'Indie Flower', cursive;
+  color: cornflowerblue;
+}
 .main {
   display: flex;
   flex-direction: row;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 20px;
 
-  &__inputSwitch {  }
+  main__inputSwitch {  }
   &__dialog {  }
   &__tooltip {  }
   &__tooltipDirective {  }

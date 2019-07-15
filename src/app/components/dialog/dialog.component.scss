@@ -11,12 +11,14 @@
     text-align: center;
     padding: 50px;
     border-radius: 10px;
-    background: aliceblue;
+    background: darkgreen;
     transition: 0.5s;
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: 450px;
     margin-right: 100px;
     margin-buttom: 100px;
+    width: 30%;
+    color: darkorange;
 
     &_fullview {
       width: 100%;
@@ -27,6 +29,7 @@
       bottom: 0;
       right: 0;
       padding: 10px;
+
     }
   }
 
@@ -40,23 +43,19 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin: 10px;
     font-size: 15px;
-    background: khaki;
+    background: darkblue;
+    color: darkorange;
   }
 
   &__close {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    background: darksalmon;
-    margin: 10px;
-    margin-left: 90%;
-  }
-
-  #open:target {
-    display: block;
+    background: brown;
+    margin-top: 10px;
+    margin-left: 80%;
+    width: 20%;
+    color: darkorange;
   }
 }
-
-

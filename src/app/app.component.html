@@ -1,22 +1,13 @@
-<!--<app-input-switch-showcase></app-input-switch-showcase>
-<app-tooltip-directive-showcase></app-tooltip-directive-showcase>
-<app-dialog-showcase></app-dialog-showcase>
-<app-tooltip-showcase></app-tooltip-showcase>-->
+<body>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 <h1>Library</h1>
 <div class="main">
   <nav>
-    <div class="main__inputSwitch">
-    <a routerLink="/InputSwitch" routerLinkActive="active">InputSwitch</a>
-    </div>
-    <div class="main__dialog">
-    <a routerLink="/Dialog" routerLinkActive="active">Dialog</a>
-    </div>
-    <div class="main__tooltip">
-    <a routerLink="/Tooltip" routerLinkActive="active">Tooltip</a>
-    </div>
-    <div class="main__tooltipDirective">
-    <a routerLink="/TooltipDirective" routerLinkActive="active">TooltipDirective</a>
-    </div>
+    <div class="main__inputSwitch" routerLink="/InputSwitch" routerLinkActive="active" style="color: gold">InputSwitch</div>
+    <div class="main__dialog" routerLink="/Dialog" routerLinkActive="active" style="color: chocolate ">Dialog</div>
+    <div class="main__tooltip" routerLink="/Tooltip" routerLinkActive="active" style="color: crimson" >Tooltip</div>
+    <div class="main__tooltipDirective" routerLink="/TooltipDirective" routerLinkActive="active"style="color: darkgreen" >TooltipDirective</div>
   </nav>
   <router-outlet></router-outlet>
 </div>
+</body>
