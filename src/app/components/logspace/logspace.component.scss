@@ -1,12 +1,12 @@
-.logspace{
+.logspace {
   margin: 50px;
   position: relative;
   display: flex;
   width: 450px;
   height: 100px;
-  background: red;
 
-  &__p{
-  font-size: 30%;
+  &__text {
+    width: 100%;
+    height: 100%;
   }
 }

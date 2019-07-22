@@ -9,6 +9,6 @@ export class TooltipComponent {
   @Input() left: boolean;
   @Input() right: boolean;
   @Input() top: boolean;
-  @Input() buttom: boolean;
+  @Input() bottom: boolean;
 
 }

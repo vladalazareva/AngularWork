@@ -1,12 +1,48 @@
-h1{
-  color: cornflowerblue;
-}
 .main {
-  color: cornflowerblue;
-  display: flex;
-  flex-direction: row;
-  font-weight: bold;
-  font-size: 20px;
-  text-decoration: none;
-  margin-left: 20px;
+
+  &__title{
+    color: cornflowerblue;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__example {
+    color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+  }
+
+  &__inputSwitch{
+    color: gold;
+    margin-right: 50px;
+    padding-right: 50px;
+
+  }
+
+  &__dialog{
+    color: chocolate;
+    margin-right: 50px;
+    padding-right: 50px;
+  }
+
+  &__tooltip{
+    color: crimson;
+    margin-right: 50px;
+    padding-right: 50px;
+  }
+
+  &__tooltipDirective{
+    color: darkgreen;
+    margin-right: 50px;
+    padding-right: 50px;
+  }
 }

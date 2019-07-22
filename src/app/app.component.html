@@ -1,12 +1,14 @@
-<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-<h1>Library</h1>
 <div class="main">
-  <nav>
-    <div class="main__inputSwitch" routerLink="/InputSwitch" routerLinkActive="active" style="color: gold">InputSwitch</div>
-    <div class="main__dialog" routerLink="/Dialog" routerLinkActive="active" style="color: chocolate ">Dialog</div>
-    <div class="main__tooltip" routerLink="/Tooltip" routerLinkActive="active" style="color: crimson" >Tooltip</div>
-    <div class="main__tooltipDirective" routerLink="/TooltipDirective" routerLinkActive="active"style="color: darkgreen" >TooltipDirective</div>
-  </nav>
-  <router-outlet></router-outlet>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <div class="main__title">Library</div>
+  <div class="main__example">
+    <nav>
+      <div class="main__inputSwitch" routerLink="/InputSwitch" routerLinkActive="active">InputSwitch</div>
+      <div class="main__dialog" routerLink="/Dialog" routerLinkActive="active">Dialog</div>
+      <div class="main__tooltip" routerLink="/Tooltip" routerLinkActive="active">Tooltip</div>
+      <div class="main__tooltipDirective" routerLink="/TooltipDirective" routerLinkActive="active">TooltipDirective
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
 </div>
-

@@ -1,9 +1,14 @@
-<h3>Tooltip left</h3>
-<app-tooltip [left]="true" [right]="false" [top]="false" [buttom]="false"></app-tooltip>
-<h3>Tooltip right</h3>
-<app-tooltip [left]="false" [right]="true" [top]="false" [buttom]="false"></app-tooltip>
-<h3>Tooltip top</h3>
-<app-tooltip [left]="false" [right]="false" [top]="true" [buttom]="false"></app-tooltip>
-<h3>Tooltip buttom</h3>
-<app-tooltip [left]="false" [right]="false" [top]="false" [buttom]="true"></app-tooltip>
-<app-logspace [info]=""></app-logspace>
+<div class="main">
+  <div class="main__left">Tooltip left
+    <app-tooltip [left]="true" [right]="false" [top]="false" [bottom]="false"></app-tooltip>
+  </div>
+  <div class="main__right">Tooltip right
+    <app-tooltip [left]="false" [right]="true" [top]="false" [bottom]="false"></app-tooltip>
+  </div>
+  <div class="main__top">Tooltip top
+    <app-tooltip [left]="false" [right]="false" [top]="true" [bottom]="false"></app-tooltip>
+  </div>
+  <div class="main__bottom">Tooltip bottom
+    <app-tooltip [left]="false" [right]="false" [top]="false" [bottom]="true"></app-tooltip>
+  </div>
+</div>
