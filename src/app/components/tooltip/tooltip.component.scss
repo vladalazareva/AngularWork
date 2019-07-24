@@ -1,3 +1,5 @@
+@import "../../../scss/colors";
+
 .tooltip {
   position: relative;
   display: flex;
@@ -22,8 +24,8 @@
   }
 
   &__text {
-    background-color: cornflowerblue;
-    color: white;
+    background-color: $color-lightblue;
+    color: $color-white;
     border-radius: 10px;
     opacity: 0;
     transition: 0.5s;

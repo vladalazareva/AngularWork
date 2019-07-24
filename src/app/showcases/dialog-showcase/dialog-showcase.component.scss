@@ -1,9 +1,11 @@
+@import "../../../scss/colors";
+
 button{
-  background: cornflowerblue;
+  background: $color-lightblue;
   border-radius: 15px;
   margin-left: 100px;
   padding: 10px;
-  color: whitesmoke;
+  color: $color-white;
   font-weight: bolder;
   font-size: 15px;
 }

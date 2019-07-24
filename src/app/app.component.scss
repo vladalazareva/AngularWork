@@ -1,10 +1,12 @@
+@import "../scss/colors";
+
 .main {
   line-height: 50px;
   margin-top: 25px;
-  background: black;
+  background: $color-black;
 
   &__title {
-    color: cornflowerblue;
+    color: $color-lightblue;
     text-align: center;
     font-size: 60px;
     font-family: 'Indie Flower', cursive;
@@ -13,7 +15,7 @@
   }
 
   &__example {
-    color: cornflowerblue;
+    color: $color-lightblue;
     display: flex;
     flex-direction: row;
     font-weight: bold;
@@ -25,26 +27,26 @@
   }
 
   &__inputSwitch {
-    color: gold;
+    color: $color-yellow;
     margin-right: 50px;
     padding-right: 50px;
 
   }
 
   &__dialog {
-    color: chocolate;
+    color: $color-chocolate;
     margin-right: 50px;
     padding-right: 50px;
   }
 
   &__tooltip {
-    color: crimson;
+    color: $color-crimson;
     margin-right: 50px;
     padding-right: 50px;
   }
 
   &__tooltipDirective {
-    color: darkgreen;
+    color: $color-green;
     margin-right: 50px;
     padding-right: 50px;
   }

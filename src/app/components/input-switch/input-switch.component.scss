@@ -23,7 +23,7 @@ $slider-size: 26px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: lightgrey;
+    background-color: $color-grey;
     transition: .4s;
     border-radius: 34px;
 
@@ -34,7 +34,7 @@ $slider-size: 26px;
       width: $slider-size;
       left: 4px;
       bottom: 4px;
-      background-color: white;
+      background-color: $color-white;
       transition: .4s;
       border-radius: 50%;
     }
@@ -43,7 +43,7 @@ $slider-size: 26px;
 
 
 input:checked + .input-switch__slider {
-  background-color: cornflowerblue;
+  background-color: $color-lightblue;
   &:before {
     transform: translateX(100%);
   }
