@@ -1,6 +1,9 @@
 .main {
+  line-height: 50px;
+  margin-top: 25px;
+  background: black;
 
-  &__title{
+  &__title {
     color: cornflowerblue;
     text-align: center;
     font-size: 60px;
@@ -21,26 +24,26 @@
     font-size: 25px;
   }
 
-  &__inputSwitch{
+  &__inputSwitch {
     color: gold;
     margin-right: 50px;
     padding-right: 50px;
 
   }
 
-  &__dialog{
+  &__dialog {
     color: chocolate;
     margin-right: 50px;
     padding-right: 50px;
   }
 
-  &__tooltip{
+  &__tooltip {
     color: crimson;
     margin-right: 50px;
     padding-right: 50px;
   }
 
-  &__tooltipDirective{
+  &__tooltipDirective {
     color: darkgreen;
     margin-right: 50px;
     padding-right: 50px;

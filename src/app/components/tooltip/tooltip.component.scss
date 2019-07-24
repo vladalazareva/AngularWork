@@ -3,12 +3,12 @@
   display: flex;
 
   &_left {
-    display: flex;
     flex-direction: row;
+    transform: translateX(-2%);
   }
   &_right {
-    display: flex;
     flex-direction: row-reverse;
+    transform: translateX(25%);
   }
   &_top {
     flex-direction: column;
