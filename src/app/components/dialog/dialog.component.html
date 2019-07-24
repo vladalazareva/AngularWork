@@ -2,14 +2,12 @@
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <div class="dialog" *ngIf="visible">
   <div class="dialog__container" [ngClass]="{dialog__container_fullview: fullView}">
-    <div class = "dialog__titlebar">
-      <span class = "dialog__title">{{title}}</span>
-      <a  class="btn btn-small btn-info" href="#">
-        <i class = "dialog__showbig" class="icon-info-sign"></i>{{size}}</a>
-      <!--<button class = "dialog__showbig" (click)="showBig()">{{size}}</button>
-      <button class="dialog__close" (click)="close()">Close dialog</button>-->
-      <a class="dialog__close" class="btn btn-danger" href="#">
-        <i class="icon-trash icon-large"></i>Close</a>
+    <div class="dialog__titlebar">
+      <span class="dialog__title">{{title}}</span>
+      <button class="btn btn-small btn-info" class="dialog__showbig" (click)="showBig()"><i class="icon-info-sign"></i>{{size}}
+      </button>
+      <button class="btn btn-danger" class="dialog__close" (click)="close()">
+      <i class="icon-trash icon-large"></i>Close dialog</button>
     </div>
     <div class="dialog__content">
       <ng-content>
